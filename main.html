@@ -1,50 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guilherme Cardoso | Desenvolvedor Web & Mobile</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+
     <header>
-        <h2>Guilherme</h2>
+        <a href="#inicio" class="logo">GC.</a>
         <nav>
-            <span>Início</span>
-            <span>Sobre</span>
-            <span>Projetos</span>
-            <span>Contato</span>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
-        <button>Tema</button>
     </header>
+
     <main>
-        <section class="introduction">
-            <div>
-                <h1>Olá! Meu nome é Guilherme!</h1>
-                <p>Sou um Desenvolvedor Full-Stack apaixonado por tecnologia, focado em construir aplicações web e
-                    mobile de alto desempenho. Com base sólida em fundamentos e vivência real de mercado, transformo
-                    problemas complexos em soluções eficientes usando Angular, NestJS, Flutter e MongoDB. Sempre pronto
-                    para o próximo desafio.</p>
-                <button>Meus Projetos</button>
-            </div>
-            <img src="gui.png">
+        <section id="inicio" class="hero">
+            <p>Olá, meu nome é</p>
+            <h1>Guilherme Monteiro Cardoso.</h1>
+            <h3 id="efeito-maquina"></h3>
+            <p class="hero-desc">Sou um desenvolvedor apaixonado por tecnologia, com experiência prática em ecossistemas
+                frontend e backend. Meu foco é resolver problemas reais e construir sistemas eficientes que façam a
+                diferença.</p>
+            <a href="#projetos" class="btn">Ver meus projetos</a>
         </section>
-        <section class="expertise">
-            <h1>Mexo um pouco com</h1>
-            <div class="tool-icons"></div>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <p>Minha jornada com a programação começou de forma um pouco inusitada. Em 2024, iniciei um curso técnico em desenvolvimento sem muita convicção. No começo, eu não gostava muito da área, mas fui persistindo.</p>
+                    <p>Tudo mudou quando consegui meu primeiro emprego como programador — empresa onde atuo até hoje. Ao vivenciar o dia a dia da profissão e superar os altos e baixos, desenvolvi uma verdadeira paixão por código e tecnologia.</p>
+                    <p>Finalizei meu curso técnico no final de 2025 e, impulsionado por essa nova paixão, já engatei na faculdade de Análise e Desenvolvimento de Sistemas, com previsão de formatura para 2027. Hoje, sou movido pelo aprendizado contínuo e pela criação de boas soluções.</p>
+                </div>
+                
+                <div class="sobre-foto-container">
+                    <img src="gui.png" alt="Foto de Guilherme Cardoso" class="sobre-foto">
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades-lista">
+                <span class="habilidade-item">Angular</span>
+                <span class="habilidade-item">NestJS</span>
+                <span class="habilidade-item">MongoDB</span>
+                <span class="habilidade-item">Flutter</span>
+                <span class="habilidade-item">JavaScript / HTML5 / CSS3</span>
+                <span class="habilidade-item">PHP</span>
+                <span class="habilidade-item">Java</span>
+                <span class="habilidade-item">MySQL</span>
+                <span class="habilidade-item">Git / GitHub / GitHub Desktop</span>
+                <span class="habilidade-item">Jira</span>
+                <span class="habilidade-item">Slack</span>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Alguns Projetos que Construí</h2>
+            <div class="grid-projetos">
+                <div class="card-projeto">
+                    <h3>Sistema de Gestão Interna</h3>
+                    <p>Uma aplicação fullstack desenvolvida para otimizar processos internos, com painéis de controle,
+                        gerenciamento de usuários e consumo de APIs REST.</p>
+                    <div class="tags">
+                        <span>Angular</span>
+                        <span>NestJS</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Ver Repositório</a>
+                </div>
+                
+                <div class="card-projeto">
+                    <h3>App Mobile Multiplataforma</h3>
+                    <p>Aplicativo desenvolvido para Android e iOS focado em performance nativa e experiência fluida para o
+                        usuário final.</p>
+                    <div class="tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Ver Repositório</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Qual o próximo passo?</h2>
+            <h1 style="font-size: 3rem; color: #e6f1ff; margin: 1rem 0;">Entre em Contato</h1>
+            <p>Seja para discutir tecnologia, uma nova oportunidade de vaga, trocar experiências sobre a área de
+                desenvolvimento ou apenas para dar um oi, minha caixa de entrada está sempre aberta!</p>
+            <a href="mailto:seuemail@exemplo.com" class="btn">Diga Olá</a>
         </section>
     </main>
-    <footer>
-        <div class="contact-icons">
 
-        </div>
-        <p>
-            Copyright 2026 - Desenvolvido pro Guilherme Monteiro Cardoso
-        </p>
-        <button>Pra cima</button>
+    <footer>
+        <p>Desenvolvido por Guilherme Monteiro Cardoso &copy; 2026</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
