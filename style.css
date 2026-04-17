@@ -204,10 +204,6 @@ footer {
     }
 }
 
-/* =========================================
-   Ajuste da Seção Sobre para Foto 
-   ========================================= */
-
 #sobre {
     display: flex;
     flex-direction: column;
@@ -215,12 +211,12 @@ footer {
 
 .sobre-conteudo {
     display: flex;
-    gap: 3rem; /* Espaço entre texto e foto */
-    align-items: flex-start; /* Alinha o topo da foto com o topo do texto */
+    gap: 3rem;
+    align-items: flex-start;
 }
 
 .sobre-texto {
-    flex: 3; /* O texto ocupa 3 partes do espaço */
+    flex: 3;
     color: #8892b0;
     max-width: 600px;
 }
@@ -230,36 +226,34 @@ footer {
 }
 
 .sobre-foto-container {
-    flex: 1; /* A foto ocupa 1 parte do espaço */
+    flex: 1;
     position: relative;
-    max-width: 300px; /* Limita o tamanho máximo da foto */
+    max-width: 300px;
 }
 
 .sobre-foto {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Cantos arredondados */
-    /* Exemplo de efeito estilizado (opcional) */
-    filter: grayscale(100%); /* Foto em preto e branco */
+    border-radius: 8px;
+    filter: grayscale(100%);
     transition: all 0.3s ease;
     border: 2px solid #233554;
 }
 
 .sobre-foto:hover {
-    filter: grayscale(0%); /* Volta a cor no hover */
-    transform: translate(-5px, -5px); /* Efeito de flutuação */
+    filter: grayscale(0%);
+    transform: translate(-5px, -5px);
 }
 
-/* Responsividade: Foto em cima do texto no celular */
 @media (max-width: 768px) {
     .sobre-conteudo {
-        flex-direction: column-reverse; /* Foto aparece antes do texto no mobile */
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         gap: 2rem;
     }
 
     .sobre-foto-container {
-        max-width: 200px; /* Foto menor no celular */
+        max-width: 200px;
     }
 }
