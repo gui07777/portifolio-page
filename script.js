@@ -1,5 +1,5 @@
 
-const textoParaDigitar = "Eu construo coisas para a web.";
+const textoParaDigitar = "Eu construo coisas com programação.";
 const elementoTexto = document.getElementById("efeito-maquina");
 let index = 0;
 
